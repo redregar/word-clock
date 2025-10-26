@@ -71,7 +71,7 @@ class ClockDisplayHAL:
             raise ValueError(f"Invalid x={x}, y={y}. Hardware only supports x=0-11, y=0-10")
         return index
 
-    def set_pixel(self, x, y, color, width=12):
+    def set_pixel(self, x, y, color):
         index = self.cartesian_to_word_clock_led_strip_index(x, y)
         self.pixels[index] = color
 
