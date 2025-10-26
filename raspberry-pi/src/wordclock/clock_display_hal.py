@@ -21,8 +21,8 @@ Display letters and indexes
 011 TENSEZOCLOCK 000
 """
 class ClockDisplayHAL:
-    WIDTH = 12
-    HEIGHT = 11
+    WIDTH = 17
+    HEIGHT = 17
     NUM_LEDS = WIDTH * HEIGHT
 
     WORDS_TO_LEDS = {
