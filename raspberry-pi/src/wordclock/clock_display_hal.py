@@ -68,7 +68,7 @@ class ClockDisplayHAL:
             row_index = ClockDisplayHAL.NUM_LEDS - ((y + 1) * ClockDisplayHAL.WIDTH)
             index = row_index + x
         if index < 0 or index >= ClockDisplayHAL.NUM_LEDS:
-            raise ValueError(f"Invalid x={x}, y={y}. Hardware only supports x=0-11, y=0-10")
+           raise ValueError(f"Invalid x={x}, y={y}. Hardware only supports x=0-{ClockDisplayHAL.WIDTH-1}, y=0-{ClockDisplayHAL.HEIGHT-1}")
         return index
 
     def set_pixel(self, x, y, color):
