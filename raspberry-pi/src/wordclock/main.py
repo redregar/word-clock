@@ -14,7 +14,7 @@ def main(pin, brightness, gif_path):
     try:
         while True:
             word_clock.display_time()
-            time.sleep(10)
+            time.sleep(30)
     except KeyboardInterrupt:
         clock_display_hal.clear_pixels()
 
