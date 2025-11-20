@@ -25,7 +25,7 @@ if __name__ == "__main__":
     parser.add_argument("--brightness",
                         type=float,
                         required=False, help="The brightness of the clock display.",
-                        default=0.05)
+                        default=0.03)
     parser.add_argument("--gif", type=str, required=False, help="The path to the GIF image.")
     args = parser.parse_args()
     main(args.pin, args.brightness, args.gif)
